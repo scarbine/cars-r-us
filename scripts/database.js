@@ -96,6 +96,16 @@ const paintColor = [
   ]
   
   
+  const newOrders = [
+    { 
+      wheelId: 0,
+      techId: 0,
+      interiorSeatTypeId: 0,
+      paintColorId: 0,
+      customerId: 0,}
+  ];
+
+
   export const getSeatType = () => {
       return database.interiorSeatType.map(seat => ({...seat}))
   }
@@ -114,3 +124,7 @@ const paintColor = [
   export const getCustomer = () => {
       return database.customers.map(customer => ({...customer}))
   }
+
+  export const getNewOrder = () => {
+    return database.newOrders.map(newOrder => ({...newOrder}))
+}
