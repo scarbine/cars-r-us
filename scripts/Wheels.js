@@ -6,7 +6,6 @@ document.addEventListener("change",
     (event)=> {
         if (event.target.name === "wheel"){
         setWheel(parseInt(event.target.value))
-        window.alert(`User has chosen wheel package ${event.target.value}.`)
     }
 })
 

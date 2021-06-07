@@ -7,7 +7,6 @@ document.addEventListener("change",
     (event)=> {
         if (event.target.name === "paint"){
         setPaint(parseInt(event.target.value))
-        window.alert(`User has chosen paint package ${event.target.value}.`)
     }
 })
 
