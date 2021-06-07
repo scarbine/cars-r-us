@@ -1,4 +1,6 @@
-const paintColor = [
+const database ={
+
+paintColor : [
     {
       id: 1,
       color: "Silver",
@@ -15,9 +17,9 @@ const paintColor = [
       id: 4,
       color: "Spring Green",
     },
-  ];
+  ],
   
-  const wheels = [
+ wheels : [
     {
       id: 1,
       type: "17-inch Pair Radial",
@@ -34,9 +36,9 @@ const paintColor = [
       id: 4,
       type: "18-inch Pair Spoke Black",
     },
-  ];
+  ],
   
-  const technology = [
+   technology : [
     {
       id: 1,
       type: "Basic Package (basic sound system)",
@@ -53,9 +55,9 @@ const paintColor = [
       id: 4,
       type: "Ultra Package (includes navigation and visibility packages)",
     },
-  ];
+  ],
   
-  const interiorSeatType = [
+ interiorSeatType : [
     {
       id: 1,
       type: "Beige Fabric",
@@ -72,11 +74,11 @@ const paintColor = [
       id: 4,
       type: "Black Leather",
     },
-  ];
+  ],
   
   
   
-  const orders = [
+orders : [
     {
       id: 1,
       wheelId: 0,
@@ -85,25 +87,26 @@ const paintColor = [
       paintColorId: 0,
       customerId: 0,
     },
-  ];
+  ],
   
-  const customers = [
+customers : [
       {
           id: 1,
           name:" "
   
       }
-  ]
+  ],
   
   
-  const newOrders = [
+newOrders : [
     { 
       wheelId: 0,
       techId: 0,
       interiorSeatTypeId: 0,
       paintColorId: 0,
       customerId: 0,}
-  ];
+  ]
+}
 
 
   export const getSeatType = () => {
@@ -127,4 +130,19 @@ const paintColor = [
 
   export const getNewOrder = () => {
     return database.newOrders.map(newOrder => ({...newOrder}))
-}
+  }
+
+  export const setWheel = (id) => {
+    database.newOrders.wheelId = id
+  }
+
+  export const setTechnology = (id) => {
+    database.newOrders.techId = id
+  }
+  export const setPaint= (id) => {
+    database.newOrders.paintColorId = id
+  }
+  export const setSeat = (id) => {
+    database.newOrders.interiorSeatTypeId = id
+  }
+  
