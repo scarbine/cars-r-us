@@ -6,7 +6,6 @@ document.addEventListener("change",
     (event)=> {
         if (event.target.name === "seat"){
         setSeat(parseInt(event.target.value))
-        window.alert(`User has chosen seat package ${event.target.value}.`)
     }
 })
 

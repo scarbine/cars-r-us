@@ -6,7 +6,6 @@ document.addEventListener("change",
     (event)=> {
         if (event.target.name === "tech"){
         setTechnology(parseInt(event.target.value))
-        window.alert(`User has chosen tech package ${event.target.value}.`)
     }
 })
 
