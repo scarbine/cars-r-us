@@ -4,6 +4,7 @@ import {Wheels} from "./Wheels.js"
 import {Technology} from "./Technology.js"
 import {addCustomerOrder} from "./database.js"
 import {Orders} from "./Orders.js"
+import {Car} from './CarType.js'
 
 document.addEventListener("click", 
     (event) => {
@@ -35,6 +36,10 @@ export const CarsRUS = () => {
             <section class="choices__seat options">
             <h2>Seats</h2>
             ${Seats()}
+            </section>
+            <section class="choices__carType options">
+            <h2>Car Type</h2>
+            ${Car()}
         </section>
         </article>
         

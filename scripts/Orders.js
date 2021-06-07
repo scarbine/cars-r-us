@@ -1,4 +1,4 @@
-import {getOrders, getPaint, getSeatType, getTechnology, getWheels} from "./database.js"
+import {getOrders, getPaint, getSeatType, getTechnology, getWheels, getCarType} from "./database.js"
 
 
 const buildOrderListItem = (order) => {
@@ -33,6 +33,15 @@ const buildOrderListItem = (order) => {
         }
     )
     totalCost += foundWheel.price
+
+    const carType = getCarType()
+    const foundCarType = carType.find(
+        (type) => {
+            return type.id === order.carTypeId
+        }
+    )
+
+    totalCost = totalCost * foundCarType.priceBase
     
     
     return `<li>

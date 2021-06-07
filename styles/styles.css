@@ -44,11 +44,14 @@ ul {
 /* You need to create the rest of styles for the layout shown */
 .choices {
     display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 1rem;
 }
 
 .options {
     flex-basis: 24%;
-    margin: 0 2rem;
+    margin: 2rem;
     border: 1px dashed dodgerblue;
     padding: 1rem;
     border-radius: 0.5rem;
