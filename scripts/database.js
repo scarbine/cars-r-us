@@ -3,76 +3,92 @@ const database = {
 paintColor : [
     {
       id: 1,
-      color: "Silver"
+      color: "Silver",
+      price: 500
     },
     {
       id: 2,
-      color: "Midnight Blue"
+      color: "Midnight Blue",
+      price: 350
     },
     {
       id: 3,
-      color: "Firebrick Red"
+      color: "Firebrick Red",
+      price: 1000
     },
     {
       id: 4,
-      color: "Spring Green"
+      color: "Spring Green",
+      price: 750
     }
   ],
   
  wheels : [
     {
       id: 1,
-      type: "17-inch Pair Radial"
+      type: "17-inch Pair Radial",
+      price: 495
     },
     {
       id: 2,
-      type: "17-inch Pair Radial Black"
+      type: "17-inch Pair Radial Black",
+      price: 395
     },
     {
       id: 3,
-      type: "18-inch Pair Spoke Silver"
+      type: "18-inch Pair Spoke Silver",
+      price: 999
     },
     {
       id: 4,
-      type: "18-inch Pair Spoke Black"
+      type: "18-inch Pair Spoke Black",
+      price: 500
     }
   ],
   
    technology : [
     {
       id: 1,
-      type: "Basic Package (basic sound system)"
+      type: "Basic Package (basic sound system)",
+      price: 750
     },
     {
       id: 2,
-      type: "Navigation Package (includes integrated navigation controls)"
+      type: "Navigation Package (includes integrated navigation controls)",
+      price:350
     },
     {
       id: 3,
-      type: "Visibility Package (includes side and rear cameras)"
+      type: "Visibility Package (includes side and rear cameras)",
+      price: 750
     },
     {
       id: 4,
-      type: "Ultra Package (includes navigation and visibility packages)"
+      type: "Ultra Package (includes navigation and visibility packages)",
+      price: 463
     }
   ],
   
  interiorSeatType : [
     {
       id: 1,
-      type: "Beige Fabric"
+      type: "Beige Fabric",
+      price: 100
     },
     {
       id: 2,
-      type: "Charcoal Fabric"
+      type: "Charcoal Fabric",
+      price: 430
     },
     {
       id: 3,
-      type: "White Leather"
+      type: "White Leather",
+      price: 504
     },
     {
       id: 4,
-      type: "Black Leather"
+      type: "Black Leather",
+      price: 940
     }
   ],
   
@@ -84,7 +100,6 @@ orders : [
       interiorSeatTypeId: 2,
       paintColorId: 1,
       timestamp:124214
-      
     },
     {
       id: 2,
