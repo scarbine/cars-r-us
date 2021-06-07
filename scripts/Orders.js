@@ -41,11 +41,11 @@ const buildOrderListItem = (order) => {
         }
     )
 
-    totalCost = totalCost * foundCarType.priceBase
+    totalCost = (totalCost * foundCarType.priceBase).toFixed(2)
     
     
     return `<li>
-        Order #${order.id} was placed on ${order.timestamp} and the total is ${totalCost}.
+        Order #${order.id} was placed on ${order.timestamp} and the total is $${totalCost}.
     </li>`
 }
 
