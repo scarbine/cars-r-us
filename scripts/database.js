@@ -91,6 +91,24 @@ paintColor : [
       price: 940
     }
   ],
+
+  carTypes : [
+    {
+      id:1,
+      type: "car",
+      priceBase: 1
+    },
+    {
+      id: 2,
+      type: "SUV",
+      priceBase:1.5
+    },
+    {
+      id:3,
+      type: "Truck",
+      priceBase:2.25
+    }
+  ],
   
 orders : [
     {
@@ -99,6 +117,7 @@ orders : [
       techId: 4,
       interiorSeatTypeId: 2,
       paintColorId: 1,
+      carTypeId:1,
       timestamp:124214
     },
     {
@@ -107,6 +126,7 @@ orders : [
       techId: 3,
       interiorSeatTypeId: 2,
       paintColorId: 3,
+      carTypeId:2,
       timestamp: 23443453
      
      
@@ -119,7 +139,8 @@ newOrders :
       wheelId: 0,
       techId: 0,
       interiorSeatTypeId: 0,
-      paintColorId: 0
+      paintColorId: 0,
+      carTypeId:0
    
     }
   
@@ -142,6 +163,10 @@ newOrders :
       return database.orders.map(order => ({...order}))
   }
 
+  export const getCarType = () => {
+      return database.carTypes.map(carType => ({...carType}))
+  }
+
   export const setWheel = (id) => {
     database.newOrders.wheelId = id
   }
@@ -154,6 +179,10 @@ newOrders :
   }
   export const setSeat = (id) => {
     database.newOrders.interiorSeatTypeId = id
+  }
+
+  export const setCarType = (id) => {
+    database.newOrders.carTypeId = id
   }
   
   export const addCustomerOrder = () => {
